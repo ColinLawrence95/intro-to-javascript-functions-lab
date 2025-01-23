@@ -151,21 +151,8 @@ function maxOfThree(num1, num2, num3)
     //data validation. Checking all three inputs are of the data tupe number
     if ((typeof num1 === "number") && (typeof num2 === "number") && (typeof num3 === "number") )
     {
-        //displaying num1 if largest
-        if (num1 > (num2 && num3))
-        {
-            return num1;
-        }
-        //displaying num2 if largest 
-        else if (num2 > (num1 && num3))
-        {
-            return num2;
-        }
-        else
-        {
-            //if num1 and num2 are not the largest, that dictates num3 is largest or they are all the same. Displaying num3
-            return num3;
-        }
+        let result = Math.max(num1,num2,num3);
+        return result;
     }
     else
     {
@@ -173,7 +160,7 @@ function maxOfThree(num1, num2, num3)
         return "Invalid Input.";
     }
 }
-console.log('Exercise 6 Result:', maxOfThree(5, 5, 6))
+console.log('Exercise 6 Result:', maxOfThree(10, 8, 7))
 /*
 Exercise 7: calculateTip()
 
